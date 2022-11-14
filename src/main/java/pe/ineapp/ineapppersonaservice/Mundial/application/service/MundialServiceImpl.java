@@ -28,9 +28,9 @@ public class MundialServiceImpl implements MundialService {
     @Override
     public ApiResponse getApis() {
         return ApiResponse.builder()
-                .apiCountries("http://localhost:8080/api/v1/mundial/paises")
-                .apiPlayers("http://localhost:8080/api/v1/mundial/jugadores")
-                .apiStadiums("http://localhost:8080/api/v1/mundial/estadios")
+                .apiCountries("http://integracion-apps-ep3-pereyra.herokuapp.com/api/v1/mundial/paises")
+                .apiPlayers("http://integracion-apps-ep3-pereyra.herokuapp.com/api/v1/mundial/jugadores")
+                .apiStadiums("http://integracion-apps-ep3-pereyra.herokuapp.com/api/v1/mundial/estadios")
                 .basicResponse(BasicResponse.whenSuccess())
                 .build();
     }
