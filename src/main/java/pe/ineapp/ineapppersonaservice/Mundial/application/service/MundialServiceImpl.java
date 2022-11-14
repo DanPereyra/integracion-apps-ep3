@@ -101,6 +101,7 @@ public class MundialServiceImpl implements MundialService {
     //Builder de entidad 'Jugador'
     public Player builderPlayerFromRequest(PlayerRequest request) {
         return Player.builder()
+                .id(null)
                 .jugador(request.getJugador())
                 .pais(request.getPais())
                 .edad(request.getEdad())
